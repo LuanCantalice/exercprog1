@@ -1,0 +1,5 @@
+pesoprato = float(input("Peso do prato? "))
+
+valortotal = pesoprato*20
+
+print("Valor a ser pago: ", valortotal, "R$")
