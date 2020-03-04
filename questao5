@@ -1,0 +1,9 @@
+odoinic = float(input("Qual a km do odômetro no inicio do dia? "))
+odofim = float(input("Qual a km do odômetro no final do dia? "))
+litroscomb = float(input("Quantos litros de combustivel foi gasto? "))
+valorreceb = float(input("Qual o valor recebido dos passageiros?" ))
+consumomed = ((odofim-odoinic)/litroscomb)
+lucroliq = (valorreceb-(litroscomb*4.15))
+
+print("Consumo médio do carro: ", consumomed, "Km/l")
+print("Lucro líquido do dia: ", lucroliq, "R$")
