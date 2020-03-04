@@ -1,0 +1,7 @@
+anonasc = int(input("Qual seu ano de nascimento? "))
+anoatual = int(input("Qual ano atual? "))
+
+idade = anoatual-anonasc
+idade2050 = 2050 - anonasc
+
+print("Você tem ", idade, "anos e terá ", idade2050, "em 2050")
