@@ -1,0 +1,8 @@
+salario = float(input("Qual o salário inicial? "))
+print("Salário: ", salario, "R$")
+
+salaumento = salario*1.15
+print("Salário com aumento: ", salaumento, "R$")
+
+saldesconto = salaumento*0.08
+print("Salário com desconto: ", salaumento-saldesconto, "R$")
