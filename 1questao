@@ -1,0 +1,6 @@
+valorpag = float(input("Valor do pagamento?"))
+valorcomb = float(input("Valor do combustível?"))
+
+quant = valorpag/valorcomb
+
+print("Foram abastecidos", quant, "litros")
