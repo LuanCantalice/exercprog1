@@ -1,0 +1,9 @@
+medida = float(input("Qual a medida em pés? "))
+
+convpol = medida*12
+convjard = medida/3
+convmilha = (medida/3)/1760
+
+print("Medida convertida em polegadas:", convpol)
+print("Medida convertida em jardas:", convjard)
+print("Medida convertida em milhas:", convmilha)
