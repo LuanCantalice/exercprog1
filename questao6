@@ -1,0 +1,10 @@
+salariomin = float(input("Qual o valor do salário mínimo? "))
+qtdenerg = float(input("Qual a quantidade de energia gasta em kWh? "))
+
+kwh = salariomin*0.005
+valorconta = qtdenerg*kwh
+desconto = valorconta*0.15
+
+print("Cada kWh vale ", kwh, "de", salariomin)
+print("Valor da conta: ", valorconta, "R$")
+print("Valor da conta com desconto de 15%: ", valorconta-desconto)
