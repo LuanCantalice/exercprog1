@@ -1,0 +1,13 @@
+tamanho = int(input("Qual o tamanho do local em m³? "))
+
+if(tamanho % 54 == 0):
+    qtdlatas = tamanho/54
+    print("Deverá comprar: ", qtdlatas, "latas")
+    valor=qtdlatas*80
+    print("Valor da compra: ", valor, "R$")
+else:
+    qtdlatas = int((tamanho/54)+1)
+    round(1, qtdlatas)
+    valor = (qtdlatas*80)
+    print("Deverá comprar: ", qtdlatas, "latas")
+    print("Valor da compra: ", valor, "R$")
