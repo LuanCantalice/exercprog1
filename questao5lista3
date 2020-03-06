@@ -1,0 +1,24 @@
+idade = int(input("Digite sua idade: "))
+peso = float(input("Digite seu peso: "))
+
+if(idade<20):
+  if(peso<=60):
+    print("Grau 9 de risco")
+  elif(peso>60 and peso<90):
+    print("Grau 8 de risco")
+  else:
+    print("Grau 7 de risco")
+elif(idade >=20 and idade<50):
+  if(peso<=60):
+    print("Grau 6 de risco")
+  elif(peso>60 and peso<90):
+    print("Grau 5 de risco")
+  else:
+    print("Grau 4 de risco")
+else:
+  if(peso<=60):
+    print("Grau 3 de risco")
+  elif(peso>60 and peso<90):
+    print("Grau 2 de risco")
+  else:
+    print("Grau 1 de risco")
