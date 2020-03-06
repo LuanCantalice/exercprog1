@@ -1,0 +1,12 @@
+num1 = float(input("Digite o primeiro numero: "))
+num2 = float(input("Digite o segundo numero: "))
+num3 = float(input("Digite o terceiro numero: "))
+num4 = float(input("Digite o quarto numero: "))
+
+somacd = num3+num4
+somaab = num1+num2
+
+if(num2>num3 and num4>num1 and somacd>somaab and (num3+num4)>0 and num1%2==0):
+  print("valores aceitos")
+else:
+  print("valores não aceitos")
