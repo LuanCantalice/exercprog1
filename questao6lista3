@@ -1,6 +1,6 @@
 salariomin = float(input("Valor do salário mínimo: "))
-turno = str(input("Turno [M – matutino; V – vespertino; ou N – noturno] ->"))
-categ = str(input("Categoria [O – operário; G – gerente] ->"))
+turno = str(input("Turno [M – matutino; V – vespertino; ou N – noturno] -> "))
+categ = str(input("Categoria [O – operário; G – gerente] -> "))
 horastrab = float(input("Horas trabalhadas no mês: "))
 coeficsal = 0
 imposto = 0
@@ -15,7 +15,7 @@ if(turno == "M" or turno == "V" or turno == "N"):
     coeficsal = salariomin*0.15
     print("Coeficiente de salário: ", coeficsal, "R$")
   else:
-    coeficsal = salariomin*0.2
+    coeficsal = salariomin*0.12
     print("Coeficiente de salário: ", coeficsal, "R$")
 else:
   print("ERRO. [Digite M – para matutino; V – para vespertino; ou N – para noturno]")
@@ -25,7 +25,7 @@ print("Salário Bruto: ", salariobruto, "R$")
 
 if(categ == "O" or categ == "G"):
   if(categ == "O"):
-    if(salmin>=300):
+    if(salariomin>=300):
       imposto = salariobruto*0.05
       print("Imposto: ", imposto, "R$")
     else:
@@ -39,7 +39,7 @@ if(categ == "O" or categ == "G"):
       imposto = salariobruto*0.04
       print("Imposto: ", imposto, "R$")
 else:
-  print("ERRO. [O – operário; G – gerente]")
+  print("ERRO. [O – para operário; G – para gerente]")
 
 if(turno == "N" and horastrab>80):
   gratificacao = 50
@@ -54,6 +54,13 @@ if(categ == "O" or coeficsal<=25):
 else:
   auxilioalim = salariobruto/2
   print("Valor do auxílio alimentação: ", auxilioalim, "R$")
-
-salarioliq = (salariobruto-imposto)+graticacao+auxilioalim
+  
+salarioliq = (salariobruto-imposto)+gratificacao+auxilioalim
 print("Salário líquido: ", salarioliq)
+
+if(salarioliq<800):
+    print("Mal remunerado.")
+elif(salarioliq>=800 and salarioliq <1500):
+    print("Normal")
+else:
+    print("Bem remunerado")
