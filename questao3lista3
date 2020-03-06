@@ -1,0 +1,19 @@
+p1 = str(input("Digite o primeiro nome: "))
+p2 = str(input("Digite o segundo nome: "))
+p3 = str(input("Digite o terceiro nome: "))
+
+if(p1>p2 and p1>p3):
+  if(p2>p3):
+    print(p3, p2, p1)
+  else:
+    print(p2, p3, p1)
+if(p2>p1 and p2>p3):
+  if(p1>p3):
+    print(p3, p1, p2)
+  else:
+    print(p1, p3, p2)
+if(p3>p1 and p3>p2):
+  if(p1>p2):
+    print(p2, p1, p3)
+  else:
+    print(p1, p2, p3)
