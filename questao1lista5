@@ -1,0 +1,12 @@
+x = float(input("Digite o valor de x: "))
+
+if(x<1):
+    calc = 4-x**2
+    print("Valor:", calc)
+
+elif(x==1):
+    print("Valor:", 2)
+
+else:
+    calc = 2+x**2
+    print("Valor:", calc)
