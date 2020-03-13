@@ -1,0 +1,8 @@
+valorsalario = float(input("Qual o valor do salário? "))
+rendacomprom = float(input("Qual o valor da renda comprometida? "))
+
+if(rendacomprom>=valorsalario*0.3):
+    print("Não é possível conceder o empréstimo")
+else:
+    emprestimo = valorsalario*0.3
+    print("Valor do empréstimo:", emprestimo-rendacomprom)
