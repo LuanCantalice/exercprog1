@@ -1,0 +1,35 @@
+espaco = str(input("Espaço interno (A)mplo ou (C)ompacto: "))
+porta = str(input("Tamanho do porta malas (G)rande ou (P)equeno: "))
+valor = float(input("Valor do carro: "))
+motor = float(input("Qual a motorização? "))
+cambio = str(input("Câmbio: (A)utomático ou (M)anual: "))
+
+ponto = 0
+
+if(espaco == "A" and porta == "G"):
+    if(valor<100000):
+        print(" -- O carro custa menos que R$ 100000 --")
+        ponto+=1
+    else:
+        print(" -- O carro custa mais que R$ 100000 -- ")
+    if(motor>=1.5):
+        print(" -- O carro possui motor maiOR que 1.5 -- ")
+        ponto+=1
+    else:
+        print(" -- O carro possui motor menor que 1.5 -- ")
+    if(cambio == "A"):
+        print(" -- O carro possui cambio automático -- ")
+        ponto +=1
+    else:
+        print(" -- O carro possui cambio manual -- ")
+
+    if(ponto==2):
+        print("Boa compra")
+    elif(ponto==1):
+        print("Pode ser uma opção")
+    elif(ponto==0):
+        print("Recomendo pensar melhor")
+    else:
+        print("Pode comprar.")
+else:
+    print("Não compre, o carro não atende os requisitos obrigatórios.")
