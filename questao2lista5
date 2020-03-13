@@ -1,0 +1,21 @@
+import math
+
+a = float(input("Digite o valor de A: "))
+b = float(input("Digite o valor de B: "))
+c = float(input("Digite o valor de C: "))
+
+delta = (b**2 - 4*a*c)
+
+print("Valor delta:", delta)
+
+if(delta<0):
+    print("Raízes Imaginárias")
+elif(delta == 0):
+    calcD = (-b/(2*a))
+    print("X1 E X2:", calcD)
+else:
+    raiz = math.sqrt(delta)
+    calcx1 = (-b+raiz)/2*a
+    calcx2 = (-b-raiz)/2*a
+    print("x1:", calcx1)
+    print("x2:", calcx2)
