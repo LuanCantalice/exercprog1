@@ -6,21 +6,7 @@ dia2 = int(input("Digite o outro dia: "))
 mes2 = int(input("Digite o outro mes: "))
 ano2 = int(input("Digite o outro ano: "))
 
-auxdia = 0
-auxmes = 0
-auxano = 0
-
-if(dia>dia2):
-    auxdia = dia
+if(ano>=ano2):
+    print(dia, mes, ano)
 else:
-    auxdia = dia2
-if(mes>mes2):
-    auxmes = mes
-else:
-    auxmes = mes2
-if(ano>ano2):
-    auxano = ano
-else:
-    auxano = ano2
-
-print(auxdia, auxmes, auxano)
+    print(dia2, mes2, ano2)
