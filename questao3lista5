@@ -6,7 +6,13 @@ dia2 = int(input("Digite o outro dia: "))
 mes2 = int(input("Digite o outro mes: "))
 ano2 = int(input("Digite o outro ano: "))
 
-if(ano>=ano2):
-    print(dia, mes, ano)
+if(ano>ano2):
+    if(dia>dia2):
+        if(mes>mes2):
+            print(dia, mes, ano)
+        else:
+            print(dia, mes, ano)
+    else:
+        print(dia, mes, ano)
 else:
     print(dia2, mes2, ano2)
