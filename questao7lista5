@@ -1,0 +1,12 @@
+num = int(input("Digite o número: "))
+
+palind = str(num)
+
+if(int(len(palind)==4)):
+    if (palind[0] == palind[3]):
+        if(palind[2] == palind[1]):
+           print("É palindromo")
+    else:
+        print("Não é palindromo")
+else:
+    print("ERRO")
